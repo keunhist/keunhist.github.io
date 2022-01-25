@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>답글달기</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
+<script src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../css/header.css">
+<style>
+.tit {
+	font-size: 48px;
+	text-align: center;
+}
+.navbar-collapse .right {
+	float: right;
+	font-family: 'Noto Sans KR', sans-serif;
+	list-style: none;
+}
+
+.navbar-collapse .right li {
+	float: left;
+	color: #fff;
+}
+.navbar-collapse .rigth li a{
+    line-height: 20px;
+    text-decoration: none;
+}
+.navbar-collapse li a {
+	color: #fff;
+	font-size: 16px;
+	padding: 15px;
+}
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+  background-image: url("./img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+header.masthead .masthead-subheading {
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .masthead-heading {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+  header.masthead .masthead-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+  }
+  header.masthead .masthead-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+		<!-- Start Top Nav -->
+		<nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+			<ul class="tnb">
+		
+			<li><a class="text-light" href="../inform/getInformList2.html" rel="sponsored">고객센터</a> </li>
+			<li><a class="text-light" href="../basket/getUserBasketList.html">관심상품</a> </li>
+			<li><a class="text-light" href="../Login.html">로그인</a></li>
+			<li><a class="text-light" href="../custom/addCustom.html">회원가입</a></li>
+		
+			</ul>
+		</nav>
+		<!-- Close Top Nav -->
+	
+	
+		<!-- Header -->
+		<nav class="navbar navbar-expand-lg navbar-light shadow" style="width:100%; background-color: white;">
+			<div class="container d-flex justify-content-between align-items-center">
+	
+				<a class="navbar-brand text-success logo h1 align-self-center" href="../index.html" style="float: left;"><img src="../assets/img/logo.png" alt="" /> </a>
+				<div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+					<div class="flex-fill">
+						<ul
+							class="nav navbar-nav d-flex justify-content-between mx-lg-auto" style="float:right;">
+							<li class="nav-item"><a class="nav-link" href="../Company.html">Company</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="../inform/getInformList2.html">About</a>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="../prolist/getProlistList2.html">Shop</a>
+							</li>
+	
+						</ul>
+					</div>
+				</div>
+	
+			</div>
+		</nav>
+<form action="" name="boardForm">
+	<input type="hidden" name="board_id" value=""/>
+	<input type="hidden" name="board_num" value=""/>
+	<input type="hidden" name="board_re_ref" value=""/>
+	<input type="hidden" name="board_re_lev" value=""/>
+	<input type="hidden" name="board_re_seq" value=""/>
+	<div>
+	<table>
+	<thead>
+		<tr>
+			<th id="title">작성자</th>
+			<th id="title">제목</th>
+			<th id="title">내용</th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td></td>
+		<td><input type="text" name="board_subject" /></td>
+		<td><textarea name="board_content" cols="30" rows="10"></textarea></td>
+	</tr>
+	</tbody>
+	</table>
+	<input type="submit" value="등록"/>
+	<input type="reset" value="취소"/>
+	<input type="button" value="목록" onclick="javascript:history.go(-1)"/>
+	</div>
+</form>
+</div>
+</body>
+</html>

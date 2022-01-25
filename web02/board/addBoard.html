@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판 등록</title>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
+<script src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<link rel="apple-touch-icon" href="../assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/templatemo.css">
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+	<style>
+		.tit{ font-size:48px; text-align: center;}
+		#templatemo_nav_top .tnb{float: right;}
+		#templatemo_nav_top ul li { padding-left:10px; list-style: none; float: left;}
+		#templatemo_nav_top ul li:last-child { padding-right:20px;}
+		#templatemo_nav_top a {text-decoration: none;}
+		#templatemo_nav_top a:hover {
+			color: #333;
+		}
+		</style>
+</head>
+<body>
+	<!-- Start Top Nav -->
+	<nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+		<ul class="tnb">	
+		<li><a class="text-light" href="../inform/getInformList2.html" rel="sponsored">고객센터</a> </li>
+		<li><a class="text-light" href="../basket/getUserBasketList.html">관심상품</a> </li>
+		<li><a class="text-light" href="../Login.html">로그인</a></li>
+		<li><a class="text-light" href="../custom/addCustom.html">회원가입</a></li>
+	
+		</ul>
+	</nav>
+	<!-- Close Top Nav -->
+
+
+	<!-- Header -->
+	<nav class="navbar navbar-expand-lg navbar-light shadow" style="width:100%; background-color: white;">
+		<div class="container d-flex justify-content-between align-items-center">
+
+			<a class="navbar-brand text-success logo h1 align-self-center" href="../index.html" style="float: left;"><img src="../assets/img/logo.png" alt="" /> </a>
+
+			<div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+				<div class="flex-fill">
+					<ul
+						class="nav navbar-nav d-flex justify-content-between mx-lg-auto" style="float:right;">
+						<li class="nav-item"><a class="nav-link" href="../Company.html">Company</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="../inform/getInformList2.html">About</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="../prolist/getProlistList2.html">Shop</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</nav>
+<h2 class="tit">게시판 등록</h2>
+	    <form method="post" action="../AddBoardCtrl" name="boardForm" enctype="multipart/form-data">
+	    <input type="hidden" name="board_id" value="admin">
+	    <table class="table">
+	        <tr>
+	            <td id="title">작성자</td>
+	            <td><input type="text" name="result_name" value="관리자" readonly /></td>
+	        </tr>
+	            <tr>
+	            <td id="title">제 목</td>
+	            <td><input name="board_subject" type="text" size="70" maxlength="100" value=""/></td>        
+	        </tr>
+	        <tr>
+	            <td id="title">내 용</td>
+	            <td><textarea name="board_content" cols="72" rows="20"></textarea></td>        
+	        </tr>
+	        <tr>
+	            <td id="title">파일첨부</td>
+	            <td><input type="file" name="board_file" /></td>    
+	        </tr>
+	        <tr align="center" valign="middle">
+	            <td colspan="5">
+	                <input type="reset" value="작성취소" class="btn btn-primary">
+	                <input type="submit" value="등록" class="btn btn-primary">
+	                <input type="button" value="목록" class="btn btn-primary">            
+	            </td>
+	        </tr>
+	    </table>    
+	    </form>
+</body>
+</html>
