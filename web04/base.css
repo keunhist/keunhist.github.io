@@ -23,7 +23,7 @@ iframe {width:100%;border:0;}
 a {color:#333; text-decoration:none;  }
 strong, .b{font-weight:500; }
 a:hover { text-decoration:underline; }
-a.arrow{background:url(/kor/images/common/bl_arrow.gif) no-repeat 0px 2px; padding-left:7px;}
+a.arrow{background:url() no-repeat 0px 2px; padding-left:7px;}
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
 	/* 20210729 a:focus {outline-style: dotted;}*/
 }

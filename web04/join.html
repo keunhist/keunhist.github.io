@@ -36,74 +36,29 @@
     <link rel="stylesheet" type="text/css"  href="base.css">
     <script src="menu.js"></script>
     <style>
-        .vs { clear:both; width: 100%; height: 460px; 
-        background-image:url("./source/login.jpg"); background-position:center center; 
-    background-repeat: no-repeat;  background-size:100% auto; }
-        .content_wrap { clear:both; width: 1200px; margin: 0 auto; margin-top:0px; }
-        .sub_tit { height: 144px; line-height: 144px; font-size:22px; background-color: #2e70b4; text-align:center; width: 190px; float:left; color:#fff; }
-        .bread_box { height: 119px; background-color: #fff; width: 980px; float:right; padding-left: 30px; padding-top: 24px; border-bottom:1px solid #999; 
-        position:relative; }
-        .cate_tit { color:#999; font-size:24px; }
-        .bread { padding-top:24px; line-height: 1.6; font-size: 16px; }
-        .bread a, .bread span { color:#999; }
-        .bread span.cur { color:#222; font-weight:600;}
-        .sub_tit_ico_box { position:absolute; right:30px; bottom:18px; }
-        .sub_tit_ico_box li { float:left; margin-left:10px; }
-        .sub_tit_ico_box li a { display:block; color:#fff; }
-        .sub_tit_ico_box li a.ico { width: 34px; height: 34px; background-position:center center; background-repeat: no-repeat; border-radius:18px; border:1px solid #ccc; }
-        .sub_tit_ico_box li a.ico.item1 { background-image: url("./source/ico_sns.gif"); }
-        .sub_tit_ico_box li a.ico.item2 { background-image: url("./source/ico_print.gif"); }
-        .sub_tit_ico_box li a.btn { border-radius:18px; padding: 6px 12px; width:auto; background-color: #999; }
-    
-        .leftbar { width:190px; float:left; min-height:80vh; background-color: #f0f0f0; }
-        .lnb { clear:both; }
-        .lnb li { clear:both; margin: 5px 6px; border:1px solid #aaa; line-height: 52px;  }
-        .lnb li a { color:#222; font-size:14px; padding-left:1em; }
-        .lnb li.act a { color:#0e3257; font-size:18px; font-weight:bold; }
-        .page_box { width:980px; float:right; padding-left: 30px; }
-    
-        .page { padding-top:40px; overflow:visible; height:auto; min-height:100vh; }
-        .page_wrap {width: 960px; }
-        .page_tit { padding-bottom: 36px; color:#666; text-align: center; font-size:40px; }
-        .sub_pic img { display:block; max-width:940px; height:auto;   }
-        .pic_lst { clear: both; }
-        .pic_lst li { float:left; margin-right: 15px; margin-bottom: 15px; }
-        .pic_lst li img { max-width:460px; }
-        .sub_pic_tit { clear:both; font-size:20px; line-height: 1.6; }
-        .sub_pic_com { clear:both; font-size:14px; line-height: 1.6; padding-bottom: 24px; }
-        .sub_full_tit { clear:both; color:#2e70b4; line-height: 3; font-size:32px; text-align: center; }
-        .sub_con img { display:block; max-width:940px; }
-        .sub_cate_com { clear:both; padding: 14px; font-style: 12px; color:#666; line-height:1.8; 
-        width: 940px; font-weight:300; }
-        .map_area { clear:both; position:relative;     overflow: hidden;
-        width: 940px; }
-        .map_tit, .sub_cate_tit { clear:both; padding-left: 32px; line-height: 2.4; font-size:20px; 
-        background-repeat: no-repeat; background-position:left center; 
-        background-image: url("./source/bull_h5.gif"); color:#134980; }
-    
-        #page2, #page3 { padding-top:130px; margin-top: 40px; border-top:5px solid deepskyblue; }
-        .onepage { clear:both; width: 100%; padding-top: 50px; padding-bottom: 50px; }
-        .onepage img { display:block; width: 100%; }
-        .page { display:none; }
-        .page:target { display:block; }
-    
-        .form { clear:both; width: 100%; }
-        .from_wrap { display:table; } /* table */
-        .form_group { display:table-row-group; } /* tbody */
-        .form_group li { display:table-row; }  /* tr */
-        .form_group li .control_wrap { display:table-cell; padding: 10px; }  /* td */
-        .form-control { display:block; width: 900px; height: 42px; line-height: 42px; 
-        padding-left: 14px; font-size:18px; }
-        .btn1 { display:block; line-height:32px; width:auto; padding: 5px 40px; 
-        background-color:deepskyblue; color:#fff; text-align: center; cursor:pointer; }
-        .btn1-left { float:left; }
-        .btn1-right { float:right; }
-        .btn1-mid { float:left; margin-left:24px; margin-right: 24px; }
-        .join_title {
-    margin: 19px 0 8px;
-    font-size: 14px;
-    font-weight: 700;
-}
+       
+input { outline:0; border:0;  border-radius:0;  }
+.fr1 { clear:both; width:960px; margin:10px auto; margin-bottom:80px;    }
+.fr:after { content:""; display:block; clear:both; }
+.fr_com { text-align:center; line-height:2.4; color:red; font-weight:bold; }
+.fr_tit { text-align:center; line-height:3; padding-top:1em; text-align:center; font-family: 'Gothic A1', sans-serif; }
+.fr_list li { clear:both;  }
+.fr_list li:first-child { border-radius:30px 30px 0px 0px; }
+.fr_list li:after { content:""; clear:both; display:block; }
+.lb { display:block;  width:200px; height:42px; line-height:42px; float:left; padding-top:20px; padding-bottom:20px;
+padding-left:150px; color:#222; font-weight:bold; font-family: 'Gothic A1', sans-serif; }
+.lb.rep:before { content:"(필수)"; color:red; font-size:18px; }
+.lb_data { display:block;  height:42px; line-height:42px; float:left; padding-top:20px; padding-bottom:20px; }
+.in_data { display:block; float:left; border:1px solid #333; width:400px; height:40px; line-height:40px; padding-left:20px; }
+.in_data2 { display:block; float:left; border:1px solid #333; width:110px; height:40px; line-height:40px; padding-left:20px; }
+.in_data3 { display:block; float:left; border:1px solid #333; width:119px; height:42px; margin:0 20px 0 20px; }
+.in_btn { display:block; height:40px; line-height:40px; width:130px; float:left; border-radius:22px; background:#333; color:#fff; margin-left:20px; 
+cursor:pointer; }
+.in_btn:hover { background-color:#ABABAB; }
+.fr_col { width:50%; float:left; padding-top:20px; padding-bottom:20px; display:block; }
+.fr_col .in_btn { clear:both;  }
+.fr_col.first .in_btn { float:right; margin-right:25px; }
+.fr_col.last .in_btn { float:left; margin-left:25px; }
 
     </style>
 <body>
@@ -466,128 +421,106 @@
     mainmenu.init([]);
 
 </script>
-<div class="content_wrap">
-    <div class="sub_box">
-        <h2 class="sub_tit">회원가입</h2>
-        <div class="bread_box">
-            <h3 class="cate_tit">회원가입</h3>
-            <p class="bread"><a href="" class="home">홈</a> &gt; <a href="">회원</a> &gt; <span class="cur">회원가입</span></p>
-        </div>
-    </div>
-    <aside class="leftbar">
-        <nav class="lnb">
-            <ul>
-                <li ><a href="#page1">로그인</a></li>
-                <li><a href="#page2">회원약관</a></li>
-                <li><a href="#page3">회원혜택</a></li>
-                <li class="act"><a href="join.html">회원가입</a></li>
-            </ul>
-        </nav>
-    </aside>
-    <div id="header">
-        <div style="font-size: 40px;">
-            회원가입
-        </div>
-    </div>
-
-
-    <!-- wrapper -->
-    <div id="wrapper">
-        <form action="joinPro.jsp" class="frm" method="post" name="joinform" onsubmit="return joinCheck(this)">
-        <!-- content-->
-        <div id="content">
-            
-            <!-- ID -->
-            <div class="join_row">
+	<!-- 회원가입 폼 -->
+    <div class="fr1">	
+        <form action="p_joinPro.jsp" class="frm" method="post" name="joinform" onsubmit="return joinCheck(this)">
+        <h1 class="fr_tit">회원 가입</h1>
+        <p class="fr_com"> 필수 입력 항목에는 반드시 입력 하셔야 합니다.</p>
+        <ul class="fr_list">
+            <li>
+                <label for="m_id" class="lb rep">아이디</label>
+                <span class="lb_data">
+                    <input type="text" name="m_id" id="m_id" placeholder="6~15 문자 및 숫자로 입력" maxlength="12" class="in_data" required autofocus />
+                    <input type="button" value="ID중복 확인" onclick="idCheck()" class="in_btn"/>
+                    <input type="hidden" value="" name="idck" id="idck" />
+                </span>
+            </li>
+            <li>
+                <label for="m_pw" class="lb rep">비밀번호</label>
+                <span class="lb_data">
+                    <input type="password" name="m_pw" id="m_pw" placeholder="영문, 숫자를 반드시 포함할 것"  class="in_data" required />
+                </span>
+            </li>
+            <li>
+                <label for="m_pw2" class="lb rep">비밀번호 확인</label>
+                <span class="lb_data">
+                    <input type="password" name="m_pw2" id="m_pw2" placeholder="영문, 숫자를 반드시 포함할 것" class="in_data" required />
+                </span>
+            </li>
+            <li>
+                <label for="name" class="lb rep">이름</label>
+                <span class="lb_data">
+                    <input type="text" name="name" id="name" placeholder="한글 이름 입력" class="in_data" required />
+                </span>
+            </li>
+            <li>
+             <label for="birth" class="lb rep">생년월일</label>
+             <span class="lb_data">
+                <input type="text" id="yy" name="birth1" class="in_data2" maxlength="4" placeholder="년(4자)" required/>
+             </span>
+             <span class="lb_data">
+                   <select id="mm" name="birth2" class="in_data3">
+                       <option></option>
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>                                    
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>               
+                     </select>
+                  </span>
+                  <span class="lb_data">
+                     <input type="text" id="dd" name="birth3" class="in_data2" maxlength="4" placeholder="일" required/>
+                  </span>
           
-                <h3 class="join_title">
-                    <label for="id">아이디</label>
-                </h3>
-                <span class="box int_id">
-                    <input type="text" id="id" class="int" maxlength="20">
-                    <span class="step_url"><input type="button" value="중복확인" onclick="idCheck()">
-                    <input type="hidden" value="" name="idck" id="idck"/>
-                    </span>
+              
+            <li>
+                <label for="email" class="lb">이메일</label>
+                <span class="lb_data">
+                    <input type="text" name="email" id="email" placeholder="@를 포함하여 입력" class="in_data"  />
                 </span>
-                
-            </div>
-
-            <!-- PW1 -->
-            <div class="join_row">
-                <h3 class="join_title"><label for="pswd1">비밀번호</label></h3>
-                <span class="box int_pass">
-                    <input type="text" id="pswd1" class="int" maxlength="20">
-                    
-                    <img src="source/pass.png" id="pswd1_img1" class="pswdImg">
+            </li>
+            <li>
+                <label for="tel" class="lb">전화번호</label>
+                <span class="lb_data">
+                    <input type="text" name="tel" id="tel" placeholder="-를 제외하여 입력" class="in_data"  />
                 </span>
-               
-            </div>
-
-            <!-- PW2 -->
-            <div class="join_row">
-                <h3 class="join_title"><label for="pswd2">비밀번호 재확인</label></h3>
-                <span class="box int_pass_check">
-                    <input type="text" id="pswd2" class="int" maxlength="20">
-                    <img src="source/pass.png" id="pswd2_img1" class="pswdImg">
+            </li>
+            <li><label for="zipcode" class="lb">우편번호 (선택)</label>
+                  <span class="lb_data">
+                          <input type="text" name="zipcode" id="zipcode" class="in_data" placeholder="주소찾기를 눌러주세요."/>
+                          <input type="button" value="주소찾기" onclick="findAddr()" class="in_btn"/>	
+                  </span>
+            </li>
+            <li>
+                <label for="address1" class="lb">주소 (선택)</label>
+                <span class="lb_data">
+                    <input type="text" name="address1" id="address1" class="in_data" />
                 </span>
-                
-            </div>
-
-            <!-- NAME -->
-            <div class="join_row">
-                <h3 class="join_title"><label for="name">이름</label></h3>
-                <span class="box int_name">
-                    <input type="text" id="name" class="int" maxlength="20">
+            </li>
+            <li>
+                <label for="address2" class="lb">상세주소 (선택)</label>
+                <span class="lb_data">
+                    <input type="text" name="address2" id="address2" class="in_data" />
                 </span>
-                
-            </div>
-        
-            <!-- EMAIL -->
-            <div class="join_row">
-                <h3 class="join_title"><label for="email">이메일</span></label></h3>
-                <span class="box int_email">
-                    <input type="text" id="email" class="int" maxlength="100">
+            </li>
+            <li>
+                <span class="fr_col first">
+                    <input type="submit" value="회원가입"  class="in_btn"/>
                 </span>
-                 
-            </div>
-
-            <!-- MOBILE -->
-            <div class="join_row">
-                <h3 class="join_title"><label for="phoneNo">휴대전화</label></h3>
-                <span class="box int_mobile">
-                    <input type="tel" id="mobile" class="int" maxlength="16" placeholder="전화번호 입력">
+                <span class="fr_col last">
+                    <input type="reset" value="취소" class="in_btn"/>
                 </span>
-                
-            </div>
-            
-           
-                
-
-            <!-- JOIN BTN-->
-            <div class="btn_area">
-                <button type="button" id="btnJoin">
-                    <span>가입하기</span>
-                </button>
-            </div>
-
-
-            
-        </div> 
-        <section class="page" id="page2">
-            <h2 class="page_tit">회원약관</h2>
-            <div class="page_wrap">
-
-            </div>
-        </section>
-        <section class="page" id="page3">
-            <h2 class="page_tit">회원혜택</h2>
-            <div class="page_wrap">
-
-            </div>
-        </section>
+            </li>
+        </ul>
+        </form>
     </div>
-</div>    
-</div>
 <div id="footer">
     <!--퀵탑-->
     <ul class="scroll_btn" id="back-top" style="display: none;">
